@@ -70,13 +70,13 @@ pub enum EgressMessage {
 
 #[derive(Debug, Serialize, Deserialize)]
 pub struct RegisterMessage {
-	pub nick: String,
+    pub nick: String,
 }
 
 #[derive(Debug, Serialize, Deserialize)]
 pub enum IngressMessage {
-	Register(RegisterMessage),
-	Disconnect,
+    Register(RegisterMessage),
+    Disconnect,
     Skip,
     Part,
     DjQueue,
